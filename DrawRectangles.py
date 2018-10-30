@@ -36,7 +36,7 @@ class Widget(QWidget):
         painter = QPainter(self)
         painter.setPen(Qt.black)
 
-        painter.setBrush(QColor(255,100,100,100))
+        painter.setBrush(QColor(100,100,255,100))
         for startpos,endpos in self.accumpos:
             painter.drawRect(startpos.x(), startpos.y(), endpos.x()-startpos.x(), endpos.y()-startpos.y())
 
